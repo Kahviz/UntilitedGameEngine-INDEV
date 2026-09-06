@@ -31,7 +31,7 @@
 - [Switching renderer](docs/readMeDocs/getting-started.md) - change the renderer
 
 # For contributing
-- [Code style](docs/readmeDocs/code_style.md) - Learn how to code for BoronEngine
+- [Code style](docs/readMeDocs/code_style.md) - Learn how to code for BoronEngine
 
 ## Contact
 
