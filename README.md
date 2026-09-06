@@ -27,29 +27,9 @@
 - **Discord RPC** - Rich presence
   
 ## Guides
-- [Getting started](docs/readMeDocs/getting-started.md) install, build, run BoronGameEngine
-- 
-- 
--
+- [Getting started](docs/readMeDocs/getting-started.md) - install, build, run BoronGameEngine
+- [Switching renderer](docs/readMeDocs/getting-started.md) - change the renderer
 
-## How to Switch Renderer
-
-1. Open `GLOBALS.h`
-2. Set `DIRECTX11` to `1` to enable (or `0` to disable)
-3. Set `VULKAN` to `1` to enable (or `0` to disable)
-
-## Building (Visual Studio Community 2026)
-
-1. Download or clone this repository
-2. In VS, go to **File → Open → CMake Project**
-3. Press **Run** and wait ~30 seconds while resources are cloned to `%AppData%`
-
-## Requirements
-
-- Windows
-- Visual Studio Community 2026
-- CMake
-- Vulkan SDK
 
 ## Contact
 
