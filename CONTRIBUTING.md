@@ -35,7 +35,7 @@ Pull Requests
 Before submitting a pull request:
 
 1. Make sure the project builds successfully.
-2. Follow the existing code style.
+2. Follow the existing code style. (watch CODE_STYLE.md)
 3. Test your changes and make sure they work on all backends.
 
 Questions

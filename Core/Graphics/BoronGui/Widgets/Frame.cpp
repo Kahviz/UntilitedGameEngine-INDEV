@@ -35,3 +35,7 @@ const BML::Vec2& Borongui::Frame::getSize() {
 const BML::Vec3& Borongui::Frame::getColor() {
 	return m_color;
 }
+
+const float Borongui::Frame::getRounding() {
+	return m_rounding;
+}

@@ -156,7 +156,7 @@ void BoronGui_implVulkan::RenderAFrame(Borongui::Frame frame) {
     commonPushConstant.size = { frame.getSize().x(), frame.getSize().y() };
 
     GuiPropertiesPushConstant guiPropPushConstant{};
-    guiPropPushConstant.rounding = 10.0f;
+    guiPropPushConstant.rounding = frame.getRounding();
 
     if (resized){
         m_globalPushConstant.viewportSize = { 
