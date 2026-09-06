@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GLOBALS.h"
+#include "BoronMathLibrary.h"
 
 #if DIRECTX11 == 1
     struct PerFrameStuct {
@@ -11,6 +12,12 @@
 
     };
 #endif
+
+struct GuiVertex {
+    BML::Vec2 position;
+    BML::Vec2 size;
+    BML::Col255 color;
+};
 
 #if VULKAN == 1
 #include "vulkan/Vulkan.h"

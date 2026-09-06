@@ -21,6 +21,9 @@ public:
     void UpdatePerFrameOBJ(PerFrameStuct& p_perFrameStuct) override;
     void RenderAFrame(Borongui::Frame frame) override;
 
+    void UploadBatch(const std::vector<GuiVertex>& vertices, const std::vector<uint32_t>& p_indices) override;
+    void DrawBatch() override;
+
     static bool InitPipeline();
 private:
     struct CommonPushConstant {

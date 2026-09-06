@@ -204,6 +204,12 @@ void BoronGui_implVulkan::RenderAFrame(Borongui::Frame frame) {
     );
 }
 
+void BoronGui_implVulkan::UploadBatch(const std::vector<GuiVertex>& vertices, const std::vector<uint32_t>& p_indices) {
+}
+
+void BoronGui_implVulkan::DrawBatch() {
+}
+
 bool BoronGui_implVulkan::InitPipeline() {
     CreateInfo("Initing VulkanPipeline!");
     //if desc here it would be
