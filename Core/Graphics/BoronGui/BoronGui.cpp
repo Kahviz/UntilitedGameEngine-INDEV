@@ -51,5 +51,9 @@ void BoronGui::RenderAFrame(Borongui::Frame& frame) {
 void BoronGui::DrawWidgets() {
 	for (Borongui::Widget* widget : widgets) {
 		widget->Render();
+
+		if (auto frame = dynamic_cast<Borongui::Frame*>(widget)) {
+
+		}
 	}
 }

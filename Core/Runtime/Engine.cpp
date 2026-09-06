@@ -471,6 +471,7 @@ void Engine::EngineDoFrame(Window* wnd, float deltatime)
     }
 
     BoronGui::ReSizeViewport({ static_cast<float>(screen_width), static_cast<float>(screen_height) });
+
     Borongui::Frame frame{};
     frame.setPosition({ 100,100 });
     frame.setSize({ 200,200 });

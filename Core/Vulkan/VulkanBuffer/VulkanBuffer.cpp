@@ -50,8 +50,6 @@ void VulkanBuffer::Destroy() {
 		vkDestroyBuffer(m_device, m_buffer, nullptr);
 		m_buffer = VK_NULL_HANDLE;
 	}
-
-	m_created = true;
 }
 
 bool VulkanBuffer::UploadData(const void* p_data, VkDeviceSize p_size) {
@@ -80,7 +78,7 @@ bool VulkanBuffer::Resize(VkDeviceSize p_newSize, VkCommandPool p_commandPool, V
 	VkDeviceMemory oldMemory = m_memory;
 
 	//New creating
-	VkDeviceSize resizeSize;
+	VkDeviceSize resizeSize = p_newSize;
 	resizeSize = Min(p_newSize, m_deviceSize);
 
 	VkBufferCreateInfo vkBufferCreateInfo{};
@@ -108,7 +106,7 @@ bool VulkanBuffer::Resize(VkDeviceSize p_newSize, VkCommandPool p_commandPool, V
 	VkBufferCopy copy{};
 	copy.srcOffset = 0;
 	copy.dstOffset = 0;
-	copy.size = m_deviceSize;
+	copy.size = Min(m_deviceSize, p_newSize);
 
 	vkCmdCopyBuffer(commandBuffer, oldBuffer, m_buffer, 1, &copy);
 

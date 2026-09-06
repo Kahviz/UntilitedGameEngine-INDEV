@@ -27,9 +27,11 @@
 - **Discord RPC** - Rich presence
   
 ## Guides
-- [Getting started](docs/readMeDocs/getting-started.md) - install, build, run BoronGameEngine
+- [Getting started](docs/readMeDocs/getting-started.md) - install, build, run BoronEngine
 - [Switching renderer](docs/readMeDocs/getting-started.md) - change the renderer
 
+# For contributing
+- [Code style](docs/readmeDocs/code_style.md) - Learn how to code for BoronEngine
 
 ## Contact
 
@@ -45,5 +47,6 @@ You can also join the BoronEngine Discord server through the website.
 **Watch** for updates!
 
 **Join BoronCommunity** https://discord.gg/6jkx4fgth6
+**Boost the BoronCommunity** - if we get the tag it would be awesome!
 
-Questions or ideas? Feel free to reach out.
+Questions or ideas? Feel free to reach out in discord.
