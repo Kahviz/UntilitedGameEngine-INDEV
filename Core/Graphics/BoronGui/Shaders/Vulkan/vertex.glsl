@@ -20,6 +20,7 @@ layout(push_constant) uniform PushConstants {
 layout(location = 0) out vec4 fragColor;
 layout(location = 1) out float fragRounding;
 layout(location = 2) out vec2 fragLocalPos;
+layout(location = 3) out vec2 fragSize;
 
 void main()
 {
@@ -38,4 +39,5 @@ void main()
     fragLocalPos = localPos;
     fragRounding = pc.rounding;
     fragColor = pc.color; //pc.color;
+    fragSize = pc.size;
 }
